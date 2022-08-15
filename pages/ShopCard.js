@@ -1,4 +1,8 @@
-import { Button, CardMedia, Grid, Paper, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
 
 export const ShopCard = () => (
   <Grid

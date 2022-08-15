@@ -1,4 +1,5 @@
-import { Grid, Paper } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import OtherCards from "./OtherCards";
 
 export const cardList = [

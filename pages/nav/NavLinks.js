@@ -1,15 +1,11 @@
 import * as React from "react";
-import {
-  Button,
-  Menu,
-  MenuItem,
-  Grid,
-} from "@mui/material";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Grid from "@mui/material/Grid";
 
 const NavLinks = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  // const [anchorEl, setAnchorEl] =
-  //   (React.useState < null) | (HTMLElement > null);
   const open = Boolean(anchorEl);
   const handleClick = () => {
     setAnchorEl(event.currentTarget);

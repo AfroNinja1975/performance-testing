@@ -1,4 +1,4 @@
-import { Card, Grid, Row, Button, Paper, Text, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import Banner from "./Banner";
 import NewsCard from "./NewsCard";
 import ShopCard from "./ShopCard";

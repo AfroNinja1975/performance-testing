@@ -1,10 +1,7 @@
-import {
-  CardMedia,
-  Grid,
-  Link,
-  Typography,
-  Image
-} from "@mui/material";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import styles from "../styles/Home.module.css";
 
 export const topLinks = [

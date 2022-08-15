@@ -1,5 +1,7 @@
-import { CardMedia, Grid, Link, Typography } from "@mui/material";
-import Image from "./Image";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 
 export const OtherCards = ({ image, heading, link, text }) => (
   <Grid

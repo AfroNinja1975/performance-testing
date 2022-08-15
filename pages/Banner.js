@@ -1,5 +1,5 @@
-import { CardMedia, Grid } from "@mui/material";
-import Image from "./Image";
+import CardMedia from "@mui/material/CardMedia";
+import Grid from "@mui/material/Grid";
 
 const Banner = ({image}) => {
   return (
