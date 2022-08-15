@@ -9,7 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.10.1",
+    "@emotion/css": "^11.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.0",
+    "material-icons": "^1.11.9",
+    "mui-image": "^1.0.7",
     "next": "12.2.4",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
