@@ -2,7 +2,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
-import styles from "../styles/Home.module.css";
 
 export const topLinks = [
   {
@@ -63,14 +62,14 @@ export const bottomLinks = [
 ];
 
 export const Footer = () => (
-  <>
+  <div className="bg-gray-700 w-full py-8">
     <Grid
       container
+      className="max-w-screen-xl m-auto"
       spacing={0}
       alignItems="center"
       justifyContent="center"
       wrap="nowrap"
-      style={{ maxWidth: "1200px", margin: "auto" }}
     >
       <Grid item xs={8} md={3}>
         <CardMedia
@@ -108,8 +107,9 @@ export const Footer = () => (
           })}
           <Grid item xs={12}>
             <Typography
+              color="#FFF"
               variant="body2"
-              style={{ color: "#FFFFFF", marginTop: "10px" }}
+              className="mt-4"
             >
               lakings.com is the official Web site of the Los Angeles Kings. Los
               Angeles Kings is a trademark of Los Angeles Kings, LLC. NHL, the
@@ -128,11 +128,11 @@ export const Footer = () => (
     </Grid>
     <Grid
       container
+      className="max-w-screen-xl mx-auto mt-3"
       spacing={0}
       alignItems="center"
       justifyContent="center"
       wrap="nowrap"
-      style={{ maxWidth: "1200px", margin: "30px auto 0" }}
     >
       <Grid item xs={8} md={3}>
         <CardMedia
@@ -151,14 +151,14 @@ export const Footer = () => (
             return (
               <Grid
                 item
-                style={{ padding: "0", margin: "0 20px 0 0" }}
+                className="p-0 mr-4"
                 key={`top-${index}`}
               >
                 <Link
+                  className="p-0"
                   href={link}
                   key={index}
                   underline="none"
-                  style={{ padding: "0", margin: "0" }}
                 >
                   <Typography variant="body2" color="#CCC">
                     {text}
@@ -170,7 +170,7 @@ export const Footer = () => (
         </Grid>
       </Grid>
     </Grid>
-  </>
+  </div>
 );
 
 export default Footer;

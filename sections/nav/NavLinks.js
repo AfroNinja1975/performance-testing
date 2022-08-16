@@ -8,7 +8,7 @@ const NavLinks = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = () => {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(event.target);
   };
   const handleClose = () => {
     setAnchorEl(null);
@@ -23,14 +23,13 @@ const NavLinks = () => {
       justifyContent="flex-end"
       wrap="nowrap"
     >
-      <Grid item>
+      <Grid item className="relative">
         <Button
           id="tickets-button"
           aria-controls={open ? "tickets-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
-          style={{ backgroundColor: "#000000" }}
           variant="contained"
         >
           Tickets
@@ -52,20 +51,12 @@ const NavLinks = () => {
         </Menu>
       </Grid>
       <Grid item>
-        <Button
-          href="#"
-          variant="contained"
-          style={{ backgroundColor: "#000000" }}
-        >
+        <Button href="#" variant="contained">
           Schedule
         </Button>
       </Grid>
       <Grid item>
-        <Button
-          href="#"
-          variant="contained"
-          style={{ backgroundColor: "#000000" }}
-        >
+        <Button href="#" variant="contained">
           NHL Standings
         </Button>
       </Grid>
@@ -76,7 +67,6 @@ const NavLinks = () => {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
-          style={{ backgroundColor: "#000000" }}
           variant="contained"
         >
           Fans
@@ -96,11 +86,7 @@ const NavLinks = () => {
         </Menu>
       </Grid>
       <Grid item>
-        <Button
-          href="#"
-          variant="contained"
-          style={{ backgroundColor: "#000000" }}
-        >
+        <Button href="#" variant="contained">
           Shop
         </Button>
       </Grid>

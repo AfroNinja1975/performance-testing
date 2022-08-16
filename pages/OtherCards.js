@@ -9,7 +9,7 @@ export const OtherCards = ({ image, heading, link, text }) => (
     alignItems="center"
     displey="flex"
     wrap="nowrap"
-    style={{ margin: "10px 0" }}
+    className="py-3"
   >
     <Grid item xs={4} md={3}>
       <CardMedia

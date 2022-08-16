@@ -24,7 +24,7 @@ export const cardList = [
 export const Other = () => (
   <Paper
     elevation={3}
-    style={{ padding: "10px 30px", boxSizing: "border-box" }}
+    className="px-6 py-3"
   >
     <Grid container display="flex" direction="column">
       {cardList.map(({ image, heading, link, text }, index) => (

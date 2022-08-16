@@ -10,64 +10,30 @@ export const NewsCard = () => (
     alignItems="flex-start"
     xs={12}
     md={6}
-    style={{
-      alignSelf: "stretch",
-      paddingLeft: "10px",
-      paddingRight: "10px",
-      boxSizing: "border-box",
-      flexDirection: "column",
-    }}
+    className="px-3 flex-col h-full items-stretch"
   >
     <Typography variant="h5" mb={1}>
-      Featured Product
+      Top Story
     </Typography>
-    <Paper
-      elevation={3}
-      style={{
-        width: "100%",
-        height: "100%",
-        boxSizing: "border-box",
-        overflow: "hidden",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          flexDirection: "column",
-          zIndex: 1,
-        }}
-      >
-        <Typography
-          variant="overline"
-          px={3}
-          pt={2}
-          pb={0}
-          color="#BBB"
-          style={{ lineHeight: 1 }}
-        >
+    <Paper elevation={3} className="w-full h-full overflow-hidden relative">
+      <div className="flex-col absolute top-0 left-0 z-1 px-5 pt-3">
+        <Typography color="#BBB" variant="overline" style={{ lineHeight: 1 }}>
           Breaking Story
         </Typography>
         <Typography
+          className="font-bold"
           variant="h6"
-          px={3}
-          pt={0}
           color="#FFF"
-          style={{ fontWeight: "bold", lineHeight: 1.5 }}
+          style={{ lineHeight: 1.5 }}
         >
           Dustin Brown to retire
         </Typography>
       </div>
       <CardMedia
         component="img"
-        sx={{
-          width: "100%",
-        }}
+        className="mb-3"
         src="https://cdn.vox-cdn.com/thumbor/7Dakrrzay6RgNFh1EsH5j370tqY=/0x0:4000x2667/1200x800/filters:focal(1680x1014:2320x1654)/cdn.vox-cdn.com/uploads/chorus_image/image/65483999/1180921065.jpg.0.jpg"
-        style={{ marginBottom: "1em" }}
+        style={{ width: "100%" }}
       />
       <Typography variant="body" px={3} pb={2}>
         Kings to Retire Dustin Brown&lsquo;s No. 23 and Unveil Statue
